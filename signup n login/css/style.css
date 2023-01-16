@@ -1,0 +1,125 @@
+body{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.container{
+    box-shadow:  0px 10px 20px inset;
+    border-width: 4px;
+    border-color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    border-style: double;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    left: calc(50% - 125px);
+    background-color: #252525;
+    width: 250px;
+    height: 300px;
+}
+.incont{
+    position: absolute;
+    transition: 0.5s;
+    margin-top: 25px;
+    width: 200px;
+    height: 250px;
+}
+#login{
+    margin-top: 40px;
+}
+button{
+    color: rgba(255, 255, 255, 0.7);
+    float: right;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 70px;
+    height: 30px;
+}
+button:hover{
+    text-shadow: black 3px 7px 5px ;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.aktifs{
+    transition-delay: 0.5s;
+    z-index: 2;
+    opacity: 1;
+}
+.pasifs{
+    z-index: 1;
+    opacity: 0;
+}
+input[type=text]{
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s ease-out;
+    margin-top: 20px;
+    width: 190px;
+    font-size: 20px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: white;
+}
+input:focus[type=text]{
+    border-bottom-color: red;
+    outline: 0;
+}
+input:valid[type=text]{
+    border-bottom-color: green;
+}
+input[type=password]{
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s ease-out;
+    margin-top: 20px;
+    width: 190px;
+    font-size: 20px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: white;
+}
+input:focus[type=password]{
+    border-bottom-color: red;
+    outline: 0;
+}
+input:valid[type=password]{
+    border-bottom-color: green;
+}
+input[type=submit]{
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    margin-top: 20px;
+    float: right;
+    width: 70px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+}
+input[type=submit]:hover{
+    text-shadow: black 3px 7px 5px ;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+input[type=submit]:focus{
+    outline: 0;
+}
+input[type=email]{
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s ease-out;
+    margin-top: 20px;
+    width: 190px;
+    font-size: 20px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: white;
+}
+input:valid[type=email]{
+    border-bottom-color: green;
+}
+input:focus[type=email]{
+    border-bottom-color: red;
+    outline: 0;
+}
+span{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
